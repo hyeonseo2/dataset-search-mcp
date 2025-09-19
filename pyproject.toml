@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataset-search-mcp"
+version = "0.1.0"
+description = "Unified open dataset search MCP server (Hugging Face / Zenodo / Kaggle)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "fastmcp>=2.10.3",
+  "huggingface_hub==0.25.2",
+  "rapidfuzz==3.9.6",
+  "rank-bm25==0.2.2",
+  "requests==2.32.3",
+  "pandas==2.2.2",
+  "kaggle==1.6.17"
+]
+
+[project.scripts]
+dataset-search-mcp = "dataset_search_mcp.server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["dataset_search_mcp*"]
