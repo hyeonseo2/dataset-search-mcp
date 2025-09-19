@@ -5,6 +5,13 @@ Search across **Hugging Face**, **Zenodo**, and optionally **Kaggle**, then gene
 
 ---
 
+## Live demo
+
+You can try the search & ranking logic in a simple UI here:
+**[Open Dataset Finder (Hugging Face Spaces)](https://huggingface.co/spaces/Hyeonseo/Open-Dataset-Finder)**
+
+---
+
 ## Features
 
 * Multi-source search: Hugging Face / Zenodo / Kaggle (when credentials are available)
